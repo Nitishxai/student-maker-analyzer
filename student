@@ -1,0 +1,42 @@
+```javascript
+let name = "Rahul Kumar";
+let rollNo = 101;
+let department = "Computer Science";
+
+let marks = [78, 85, 62, 91, 34];
+
+function calculateTotal(marks) {
+    let total = 0;
+
+    for (let mark of marks) {
+        total += mark;
+    }
+
+    return total;
+}
+
+function calculatePercentage(marks) {
+    return (calculateTotal(marks) / (marks.length * 100)) * 100;
+}
+
+function findHighest(marks) {
+    return Math.max(...marks);
+}
+
+function findLowest(marks) {
+    return Math.min(...marks);
+}
+
+let subjectsPassed = marks.filter(mark => mark >= 40).length;
+
+let upperCaseName = name.toUpperCase();
+let nameLength = name.length;
+
+console.log("Student: " + upperCaseName);
+console.log("Roll Number: " + rollNo);
+console.log("Total Marks: " + calculateTotal(marks));
+console.log("Percentage: " + calculatePercentage(marks) + "%");
+console.log("Highest Marks: " + findHighest(marks));
+console.log("Lowest Marks: " + findLowest(marks));
+console.log("Subjects Passed: " + subjectsPassed);
+```
