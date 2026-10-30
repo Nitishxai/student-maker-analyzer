@@ -1,4 +1,3 @@
-```javascript
 let name = "Rahul Kumar";
 let rollNo = 101;
 let department = "Computer Science";
@@ -39,4 +38,4 @@ console.log("Percentage: " + calculatePercentage(marks) + "%");
 console.log("Highest Marks: " + findHighest(marks));
 console.log("Lowest Marks: " + findLowest(marks));
 console.log("Subjects Passed: " + subjectsPassed);
-```
+
